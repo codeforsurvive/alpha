@@ -1,0 +1,112 @@
+<style>
+.bg-back
+{
+	background: url('app/img/bg1.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.bg-front
+{
+	background: url('pict/bg-small-white.png') repeat;
+	height: 100%;
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top: 0;
+}
+.full button span {
+	background-color: limegreen;
+	border-radius: 32px;
+	color: black;
+}
+.partially button span {
+	background-color: orange;
+	border-radius: 32px;
+	color: black;
+}
+</style>
+<div class="container-fluid" style="font-family:OpenFontRegular" ng-init="init()">
+	<div class="col-md-12 col-sm-12 col-xs-12 img-responsive bg-back">
+		<div class="bg-front">
+			<div style="height: 70px"></div>
+			<div class="clearfix"></div>
+			<div>
+				<div style="text-align: center">
+					<span class="app-title" style="color: black">Search Rooms</span>
+				</div>
+				<form ng-submit="search()">
+					<div class="form-group col-sm-12 col-xs-12">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-sm-12 col-xs-12">
+								<label><strong>Check In</strong></label>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-sm-12 col-xs-12 input-group">
+								<input name="checkIn" type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="searchParams.checkIn" is-open="datepickers.checkIn" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" required disabled/>
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-default" ng-click="open($event, 'checkIn')"><i class="glyphicon glyphicon-calendar"></i></button>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-sm-12 col-xs-12">
+								<label><strong>Check Out</strong></label>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-sm-12 col-xs-12 input-group">
+								<input name="checkOut" type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="searchParams.checkOut" is-open="datepickers.checkOut" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" ng-required="true" close-text="Close" required disabled/>
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-default" ng-click="open($event, 'checkOut')"><i class="glyphicon glyphicon-calendar"></i></button>
+								</span>
+							</div>
+						</div>
+						<!--
+						<div class="col-sm-5 col-sm-offset-1 col-xs-12">
+							<datepicker date-set="{{searchParams.date}}" date-format="{{searchParams.pattern}}">
+								<input ng-model="searchParam.checkOut"  type="text" readonly required />
+							</datepicker>
+						</div>
+					-->
+				</div>
+				<div class="form-group col-sm-12 col-xs-12">
+				
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
+							<label><strong>Rooms</strong></label>
+						</div>
+						<div class="col-sm-8 col-xs-6">
+							<input type="number" min="1" ng-model="searchParams.rooms" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
+							<label><strong>Guest</strong></label>
+						</div>
+						<div class="col-sm-8 col-xs-6">
+							<input type="number" min="1" ng-model="searchParams.guest" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div ng-repeat="hotel in hotels">
+					<div class="col-sm-4 col-xs-12">
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" value="option1">
+								{{hotel}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group col-sm-12 col-xs-12">
+					<button type="submit" class="btn btn-lg btn-success"><i class="fa fa-lg fa-search"></i> Search</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+

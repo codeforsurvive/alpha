@@ -1,0 +1,376 @@
+/* @group Social Buzz div context reset */
+
+div#social-buzz{
+    font-family: Verdana,Helvetica,Arial,sans-serif !important;
+    background-color: #fff;
+}
+
+div#social-buzz div,
+div#social-buzz span,
+div#social-buzz h1,
+div#social-buzz h2,
+div#social-buzz h3,
+div#social-buzz h4,
+div#social-buzz h5,
+div#social-buzz h6,
+div#social-buzz p,
+div#social-buzz blockquote,
+div#social-buzz pre,
+div#social-buzz a,
+div#social-buzz em,
+div#social-buzz font,
+div#social-buzz img,
+div#social-buzz strong,
+div#social-buzz b,
+div#social-buzz u,
+div#social-buzz i,
+div#social-buzz center,
+div#social-buzz ol,
+div#social-buzz ul,
+div#social-buzz li{
+    margin: 0 !important;
+    height: auto !important;
+    width: auto !important;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    position: static !important;
+    text-transform: none !important;
+    float: none;
+    text-indent: 0;
+    text-align: left;
+}
+div#social-buzz ol, div#social-buzz ul,
+div#social-buzz ol li, div#social-buzz ul li{
+    list-style: none;
+    list-style-image: none;
+}
+div#social-buzz blockquote, div#social-buzz q{
+    quotes: none;
+}
+div#social-buzz :focus{
+    outline: none;
+}
+div#social-buzz table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* @end */
+
+/* @group sIFR overrides */
+
+div#social-buzz .sIFR-replaced embed{
+    display: none !important;
+}
+div#social-buzz .sIFR-replaced .sIFR-alternate{
+    height: auto !important;
+    width: auto !important;
+    position: inherit !important;
+    overflow: visible !important;
+}
+
+/* @end */
+
+/* @group Stars and Other Rating Indicators Sprite */
+
+div#social-buzz .rating{
+    display: inline-block;
+    width: 80px !important;
+    padding: 0;
+    margin: 0;
+    background: url(//static.revinate.com/css/img/social-buzz-sprite.png) 0 0 no-repeat;
+    line-height: 16px;
+    height: 16px !important;
+    overflow: hidden;
+    text-align: left;
+}
+div#social-buzz .rating.r0{
+    background-position: -80px 0;
+}
+div#social-buzz .rating.r0_5{
+    background-position: -80px -25px;
+}
+div#social-buzz .rating.r1{
+    background-position: -64px 0;
+}
+div#social-buzz .rating.r1_5{
+    background-position: -64px -25px;
+}
+div#social-buzz .rating.r2{
+    background-position: -48px 0;
+}
+div#social-buzz .rating.r2_5{
+    background-position: -48px -25px;
+}
+div#social-buzz .rating.r3{
+    background-position: -32px 0;
+}
+div#social-buzz .rating.r3_5{
+    background-position: -32px -25px;
+}
+div#social-buzz .rating.r4{
+    background-position: -16px 0;
+}
+div#social-buzz .rating.r4_5{
+    background-position: -16px -25px;
+}
+div#social-buzz .rating.small{
+    width: 60px !important;
+    line-height: 12px;
+    height: 12px !important;
+}
+div#social-buzz .rating.small.r0{
+    background-position: -60px -300px;
+}
+div#social-buzz .rating.small.r0_5{
+    background-position: -60px -325px;
+}
+div#social-buzz .rating.small.r1{
+    background-position: -48px -300px;
+}
+div#social-buzz .rating.small.r1_5{
+    background-position: -48px -325px;
+}
+div#social-buzz .rating.small.r2{
+    background-position: -36px -300px;
+}
+div#social-buzz .rating.small.r2_5{
+    background-position: -36px -325px;
+}
+div#social-buzz .rating.small.r3{
+    background-position: -24px -300px;
+}
+div#social-buzz .rating.small.r3_5{
+    background-position: -24px -325px;
+}
+div#social-buzz .rating.small.r4{
+    background-position: -12px -300px;
+}
+div#social-buzz .rating.small.r4_5{
+    background-position: -12px -325px;
+}
+div#social-buzz .rating.small.r5{
+    background-position: 0 -300px;
+}
+div#social-buzz .rating.ta{
+    width: 69px !important;
+    line-height: 14px;
+    height: 14px !important;
+}
+div#social-buzz .rating.ta.r5{
+    background-position: 0 -350px;
+}
+div#social-buzz .rating.ta.r4_5{
+    background-position: 0 -364px;
+}
+div#social-buzz .rating.ta.r4{
+    background-position: 0 -378px;
+}
+div#social-buzz .rating.ta.r3_5{
+    background-position: 0 -392px;
+}
+div#social-buzz .rating.ta.r3{
+    background-position: 0 -406px;
+}
+div#social-buzz .rating.ta.r2_5{
+    background-position: 0 -420px;
+}
+div#social-buzz .rating.ta.r2{
+    background-position: 0 -434px;
+}
+div#social-buzz .rating.ta.r1_5{
+    background-position: 0 -448px;
+}
+div#social-buzz .rating.ta.r1{
+    background-position: 0 -462px;
+}
+div#social-buzz .rating.ta.r0_5{
+    background-position: 0 -476px;
+}
+div#social-buzz .rating.ta.r0{
+    background-position: 0 -490px;
+}
+div#social-buzz .rating.tasmall{
+    width: 51px !important;
+    line-height: 11px;
+    height: 11px !important;
+}
+div#social-buzz .rating.tasmall.r5{
+    background-position: 0 -550px;
+}
+div#social-buzz .rating.tasmall.r4_5{
+    background-position: 0 -561px;
+}
+div#social-buzz .rating.tasmall.r4{
+    background-position: 0 -572px;
+}
+div#social-buzz .rating.tasmall.r3_5{
+    background-position: 0 -583px;
+}
+div#social-buzz .rating.tasmall.r3{
+    background-position: 0 -594px;
+}
+div#social-buzz .rating.tasmall.r2_5{
+    background-position: 0 -605px;
+}
+div#social-buzz .rating.tasmall.r2{
+    background-position: 0 -616px;
+}
+div#social-buzz .rating.tasmall.r1_5{
+    background-position: 0 -627px;
+}
+div#social-buzz .rating.tasmall.r1{
+    background-position: 0 -638px;
+}
+div#social-buzz .rating.tasmall.r0_5{
+    background-position: 0 -649px;
+}
+div#social-buzz .rating.tasmall.r0{
+    background-position: 0 -660px;
+}
+div#social-buzz .talogo{
+    display: block;
+    width: 110px !important;
+    height: 19px !important;
+    line-height: 19px;
+    padding: 0;
+    margin: 0;
+    background: url(//static.revinate.com/css/img/social-buzz-sprite.png) 0 -675px no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+/* @end */
+
+/* @group Social Buzz */
+
+div#social-buzz a{
+    color: #666;
+    text-decoration: none;
+}
+div#social-buzz a:hover{
+    text-decoration: underline;
+}
+div#social-buzz a.blue{
+    color: #6A8CA4;
+}
+div#social-buzz a.black{
+    color: #000;
+}
+div#social-buzz h1{
+    color: #000;
+    font-size: 15px !important;
+    margin-top: 10px !important;
+}
+div#social-buzz h2{
+    color: #666;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+div#social-buzz .header{
+    background-color: #fefef9;
+    border: 1px solid #eee;
+    color: #666;
+    margin-bottom: 10px !important;
+    padding: 5px 10px 2px;
+    font-size: 8pt;
+    display: block !important;
+}
+div#social-buzz h3{
+    color: #666;
+    font: normal normal bold 1em/150% "Verdana","Helvetica","Arial",sans-serif !important;
+}
+div#social-buzz .rank{
+    color: #589442;
+}
+div#social-buzz .rank .ranking{
+    font-weight: bold;
+    font-size: 120%;
+}
+div#social-buzz .market-ranking{
+    float: right;
+    text-align: right;
+}
+div#social-buzz li > span{
+    vertical-align: top;
+    display: inline-block;
+}
+div#social-buzz li > span.site-name{
+    width: 20% !important;
+}
+div#social-buzz li > span.site-rating{
+    width: 15% !important;
+}
+div#social-buzz li > span.site-reviews{
+    width: 20% !important;
+}
+div#social-buzz li > span.source{
+    width: 30% !important;
+    font-size: 7.5pt;
+    color: #666;
+}
+div#social-buzz li > span.excerpt{
+    width: 69% !important;
+    font-size: 8pt !important;
+}
+div#social-buzz .source li{
+    line-height: 1.5em;
+}
+div#social-buzz .logo{
+    padding-bottom: 10px;
+    font-size: 9.6pt !important;
+    font-weight: bold !important;
+    text-align: left !important;
+}
+div#social-buzz .rate{
+    padding-bottom: 5px;
+}
+div#social-buzz > ul > li{
+    padding-bottom: 10px;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #eee;
+}
+div#social-buzz .byline{
+    display: block;
+    color: #666;
+    padding-top: 4px;
+    font-size: 7.5pt;
+}
+div#social-buzz .footer{
+    text-align: center;
+    font-size: 8pt;
+}
+
+div#social-buzz-widget{
+    display:block !important;
+}
+
+div#social-buzz-widget{
+    display:block !important;
+}
+#social-buzz .sb-sm {
+    display:block !important;
+    float:left !important;
+    margin:0 10px 10px 0 !important;
+    height:48px !important;
+    width:48px !important;
+}
+#social-buzz .sb-text {
+    display:block !important;
+    margin-left:60px !important;
+}
+#social-buzz .sb-name {
+    font-weight:bold;
+    color:#333333;
+    font-size:12px;
+}
+#social-buzz .sb-date {
+    color:#466FB3;
+}
+/* @end */

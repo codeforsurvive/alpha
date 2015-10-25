@@ -1,0 +1,145 @@
+<div ng-init="init()">
+	<div style="height: 60px"></div>
+			<div class="clearfix"></div>
+	<div class="flexHotelResults_slimMod flexHotelResults" data-context="flexHotelResultsSlim" data-agent="">
+		
+		<div class="row col-xs-12 col-sm-12">
+			<div style="text-align: center">
+					<span class="app-title" style="color: black">Available Rooms</span>
+				</div>
+		</div>
+		
+		<div class="row col-xs-12 col-sm-12 margin-sort">
+		  <div class="col-xs-12 col-sm-2"><div class="sort-by">Sort by : </div></div>
+		  <div class="col-xs-4 col-sm-2"><div class="aktif">Best Quality</div></div>
+		  <div class="col-xs-4 col-sm-2"><div class="pasif">Lowest Price</div></div>
+		  <div class="col-xs-4 col-sm-2"><div class="pasif">Star Rating</div></div>
+		</div>
+		
+		<!--<div>
+			<ul class="css-ul">
+				<li class="css-li">First menu item</li>
+				<li class="css-li">Second menu item</li>
+				<li class="css-li">Third menu item</li>
+			</ul>
+		</div>-->
+		
+		<div class="hotelResults" data-context="slimView" ng-repeat="d in data">
+			<div class="row col-xs-12 col-sm-12 top-buffer">
+					<div class="col-xs-12 col-sm-4 margin-gambar">
+						<img src="{{d.img}}" />
+					</div>
+					<div class="col-xs-12 col-sm-8 margin-tulisan">
+						<div class="rright"> 
+							<h3>{{d.type}} {{d.name}}</h3> 
+							<p>{{d.description}}</p>
+							<img src="{{d.rating_img}}" alt="{{d.rating}} stars" class="stars" data-context="{{d.data_context}}">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="text-center harga pull-right">
+							{{d.price | currency : "IDR "}}
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<a ng-click="book(d.name)" class="rbook-now pull-right" title="">Book Now</a>
+					</div>
+			</div>
+			<!--
+			<div class="row col-xs-12 col-sm-12 top-buffer">
+				<div class="col-xs-4 col-sm-4 margin-gambar">
+						<img src="pict/kamar2_.jpg" />
+					</div>
+				<div class="col-xs-8 col-sm-8 margin-tulisan">
+					<div class="rright"> 
+						<h3>1 Bedroom Penthouse</h3> 
+						<p>One-Bedroom Penthouse is 6% larger than One Bedroom Executive. This room offers the same facilities as One bedroom executive but in addition it eqquiped with TV in Master Bedroom and Extra Balcony. Free wifi internet connection in room and breakfast for two people.</p> 
+						<img src="pict/stars-4.png" alt="4 stars" class="stars" data-context="stars-4">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+						<div class="text-center harga">
+							IDR 4,000,000
+						</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<a class="rbook-now" title="">Book Now</a>
+				</div>
+			</div>
+			
+			<div class="row col-xs-12 col-sm-12 top-buffer">
+				<div class="col-xs-4 col-sm-4 margin-gambar">
+						<img src="pict/kamar3_.jpg" />
+				</div>
+				<div class="col-xs-8 col-sm-8 margin-tulisan">
+					<div class="rright"> 
+						<h3>2 Bedroom Superior</h3>
+						<p>The 74 sqm Two-Bedroom Superior features two separate bedrooms, living room, kitchen and dining area, bathroom and utility area, a private balcony, and washing machine (on request),Bathroom Shower. It can accommodate a maximum of three people. Also includes breakfast for two people and free wifi internet access.</p> 
+						<img src="pict/stars-4.png" alt="4 stars" class="stars" data-context="stars-4">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+						<div class="text-center harga">
+							IDR 3,000,000
+						</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<a class="rbook-now" title="">Book Now</a>
+				</div>
+			</div>
+			
+			<div class="row col-xs-12 col-sm-12 top-buffer">
+				<div class="col-xs-4 col-sm-4 margin-gambar">
+						<img src="pict/kamar4_.jpg" />
+				</div>
+				<div class="col-xs-8 col-sm-8 margin-tulisan">
+					<div class="rright"> 
+						<h3>2 Bedroom Deluxe</h3>
+						<p>This room is 4 sqm larger than Two-Bedroom Superior and features all amenities mentioned above. In addition it also eqquiped with bathub and TV in Master Bedroom. It can accommodate a maximum of three people. Also includes breakfast for two people and free wifi internet access.</p> 
+						<img src="pict/stars-3.png" alt="3 stars" class="stars" data-context="stars-3">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+						<div class="text-center harga">
+							IDR 2,000,000
+						</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<a class="rbook-now" title="">Book Now</a>
+				</div>
+			</div>
+			
+			<div class="row col-xs-12 col-sm-12 top-buffer">
+				<div class="col-xs-4 col-sm-4 margin-gambar">
+						<img src="pict/kamar5_.jpg" />
+				</div>
+				<div class="col-xs-8 col-sm-8 margin-tulisan">
+					<div class="rright"> 
+						<h3>3 Bedroom Suite</h3>
+						<p>Perfect for family! Spacious 90 sqm Three-Bedroom Suite offers three separate bedrooms, living room, kitchen and dining area, bathroom and utility area, a private balcony, and washing machine (on request). It includes breakfast for three people, free wifi internet connection in room and access to swimming pool and mini-gym.</p> 
+						<img src="pict/stars-3.png" alt="3 stars" class="stars" data-context="stars-3">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+						<div class="text-center harga">
+							IDR 1,000,000
+						</div>
+				</div>
+				<div class="col-xs-4 col-sm-4">
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<a class="rbook-now" title="">Book Now</a>
+				</div>
+			</div>
+		-->
+		</div>
+	</div>
+</div>
